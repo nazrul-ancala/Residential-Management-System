@@ -1,15 +1,60 @@
 services:
-  unitcare-web:
+
+  # ── PHP-FPM workers (not exposed to host) ──────────────────────────────────
+
+  unitcare-php:
     build:
       context: ./unitcare
       dockerfile: Dockerfile
+    container_name: unitcare-php
+    volumes:
+      - ./unitcare:/var/www/html
+      - unitcare-vendor:/var/www/html/vendor   # image-baked vendor shadows slow host mount
+    networks:
+      - mrs-network
+
+  unitcare-api-php:
+    build:
+      context: ./unitcare-api
+      dockerfile: Dockerfile
+    container_name: unitcare-api-php
+    volumes:
+      - ./unitcare-api:/var/www/html
+      - unitcare-api-vendor:/var/www/html/vendor
+    networks:
+      - mrs-network
+
+  # ── Nginx reverse proxies (exposed to host, same ports as before) ──────────
+
+  unitcare-web:
+    image: nginx:alpine
     container_name: unitcare-web
     ports:
       - "8080:80"
     volumes:
       - ./unitcare:/var/www/html
+      - unitcare-vendor:/var/www/html/vendor
+      - ./docker/nginx/app.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - unitcare-php
     networks:
       - mrs-network
+
+  unitcare-api-web:
+    image: nginx:alpine
+    container_name: unitcare-api-web
+    ports:
+      - "8081:80"
+    volumes:
+      - ./unitcare-api:/var/www/html
+      - unitcare-api-vendor:/var/www/html/vendor
+      - ./docker/nginx/api.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - unitcare-api-php
+    networks:
+      - mrs-network
+
+  # ── Vite dev servers (unchanged) ───────────────────────────────────────────
 
   unitcare-vite:
     image: node:22-alpine
@@ -20,18 +65,6 @@ services:
       - "5173:5173"
     volumes:
       - ./unitcare:/app
-    networks:
-      - mrs-network
-
-  unitcare-api-web:
-    build:
-      context: ./unitcare-api
-      dockerfile: Dockerfile
-    container_name: unitcare-api-web
-    ports:
-      - "8081:80"
-    volumes:
-      - ./unitcare-api:/var/www/html
     networks:
       - mrs-network
 
@@ -46,6 +79,10 @@ services:
       - ./unitcare-api:/app
     networks:
       - mrs-network
+
+volumes:
+  unitcare-vendor:
+  unitcare-api-vendor:
 
 networks:
   mrs-network:

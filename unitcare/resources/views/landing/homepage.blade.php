@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta name="description" content="Spruha -  Admin Panel HTML Dashboard Template">
-    <meta name="author" content="Spruko Technologies Private Limited">
+    <meta name="description" content="UnitCare - Maintenance Residence System for residential communities">
+    <meta name="author" content="UnitCare">
     <meta name="keywords"
-        content="admin,dashboard,panel,bootstrap admin template,bootstrap dashboard,dashboard,themeforest admin dashboard,themeforest admin,themeforest dashboard,themeforest admin panel,themeforest admin template,themeforest admin dashboard,cool admin,it dashboard,admin design,dash templates,saas dashboard,dmin ui design">
+        content="unitcare,residence management,maintenance,visitors,bookings,announcements,facility booking,residence system">
 
     <!-- Favicon -->
     <link rel="icon" href="../assets/img/brand/favicon.ico" type="image/x-icon" />
@@ -78,9 +78,7 @@
                                 <div class="d-flex order-lg-2 ms-auto">
                                     <!-- SEARCH -->
                                     <div class="header-nav-right p-3">
-                                        <a href="signin.html" class="btn ripple btn-min w-sm btn-outline-primary me-2"
-                                            target="_blank">New User
-                                        </a>
+                                        
                                         <a href="{{ route('login') }}" class="btn ripple btn-min w-sm btn-primary me-2">Login
                                         </a>
                                     </div>
@@ -126,16 +124,8 @@
                                                     class="side-menu__label">About</span></a>
                                         </li>
                                         <li class="slide">
-                                            <a class="side-menu__item" data-bs-toggle="slide" href="#faqs"><span
-                                                    class="side-menu__label">Highlights</span></a>
-                                        </li>
-                                        <li class="slide">
                                             <a class="side-menu__item" data-bs-toggle="slide" href="#Faqs"><span
-                                                    class="side-menu__label">Faq's</span></a>
-                                        </li>
-                                        <li class="slide">
-                                            <a class="side-menu__item" data-bs-toggle="slide" href="#Clients"><span
-                                                    class="side-menu__label">Clients</span></a>
+                                                    class="side-menu__label">FAQ</span></a>
                                         </li>
                                         <li class="slide">
                                             <a class="side-menu__item" data-bs-toggle="slide" href="#Contact"><span
@@ -148,9 +138,7 @@
                                                 d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
                                         </svg></div>
                                     <div class="header-nav-right d-none d-lg-block">
-                                        <a href="signin.html" class="btn ripple btn-min w-sm btn-secondary me-2"
-                                            target="_blank">New User
-                                        </a>
+                                        
                                         <a href="{{ route('login') }}" class="btn ripple btn-min w-sm btn-info me-2">Login
                                         </a>
                                     </div>
@@ -164,22 +152,16 @@
                     <div class="container px-sm-0">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 animation-zidex pos-relative">
-                                <h4 class="fw-semibold mt-7">Manage Your Business</h4>
-                                <h1 class="text-start fw-bold">We Help to Build Your Dream Project with Spruha !</h1>
+                                <h4 class="fw-semibold mt-7">Smart Residence Management</h4>
+                                <h1 class="text-start fw-bold">UnitCare — The All-in-One Residence Management System</h1>
                                 <h6 class="pb-3">
-                                    Spruha - Now you can use this admin template to design stunning dashboards
-                                    that will wow your target viewers or users to no end. To create a good and
-                                    well-structured dashboard,
-                                    you need to start from scratch with HTML, SCSS, CSS, and JS and with lots of coding,
-                                    but by using this Spruha-Admin template.</h6>
+                                    Manage maintenance requests, visitors, facility bookings, and community
+                                    announcements — all in one place. Built for residents, security staff,
+                                    technicians, and administrators.</h6>
 
-                                <a href="https://1.envato.market/RA3qN"
-                                    target="_blank" class="btn ripple btn-min w-lg mb-3 me-2 btn-light"><i
-                                        class="fe fe-play me-2"></i> Get Started
-                                </a>
-                                <a href="https://themeforest.net/user/spruko/portfolio"
-                                    class="btn ripple btn-min w-lg btn-outline-light mb-3 me-2" target="_blank"><i
-                                        class="fe fe-eye me-2"></i>Discover More
+                                <a href="{{ route('login') }}"
+                                    class="btn ripple btn-min w-lg mb-3 me-2 btn-light"><i
+                                        class="fe fe-log-in me-2"></i> Login
                                 </a>
                             </div>
                             <div class="col-xl-6 col-lg-6 my-auto">
@@ -200,10 +182,8 @@
                             <div class="row">
                                 <h4 class="text-center fw-semibold landing-card-header">Features</h4>
                                 <span class="landing-title"></span>
-                                <h2 class="fw-semibold text-center">Spruha Main Features</h2>
-                                <p class="text-default mb-5 text-center">The Spruha admin template comes with
-                                    ready-to-use features that are completely easy-to-use for any user, even for
-                                    a beginner.</p>
+                                <h2 class="fw-semibold text-center">UnitCare Features</h2>
+                                <p class="text-default mb-5 text-center">Everything your residential community needs, built into one system.</p>
                                 <div class="row mt-7">
                                     <div class="col-lg-3 col-md-12">
                                         <div class="card features main-features main-features-1 wow fadeInUp reveal revealleft"
@@ -212,14 +192,13 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-package text-white"></i>
+                                                            <i class="fe fe-tool text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">Unique Design</h4>
-                                                    <p class="mb-0">Spruha has a unique design that you cannot compare
-                                                        with any other templates. It has unique Design</p>
+                                                    <h4 class="fw-bold">Maintenance Requests</h4>
+                                                    <p class="mb-0">Submit and track maintenance requests with status updates and technician assignment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,15 +210,13 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-code text-white"></i>
+                                                            <i class="fe fe-users text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">Quality &amp; Clean Code</h4>
-                                                    <p class="mb-0">The Spruha admin code is maintained very cleanly and
-                                                        well-structured with proper
-                                                        comments.</p>
+                                                    <h4 class="fw-bold">Visitor Management</h4>
+                                                    <p class="mb-0">Register visitors, manage check-ins, and view today's visitor log in real time.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,15 +228,14 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-layers text-white"></i>
+                                                            <i class="fe fe-calendar text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">Multiple Demos</h4>
+                                                    <h4 class="fw-bold">Facility Bookings</h4>
                                                     <p class="mb-0">
-                                                        We included multiple demos, preview video, and screen shots to
-                                                        give a quick overview of our Dashlead admin template.
+                                                        Book shared facilities like courts and halls, with availability checks and admin approval.
                                                     </p>
                                                 </div>
                                             </div>
@@ -272,16 +248,14 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-book-open text-white"></i>
+                                                            <i class="fe fe-bell text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">Well Documentation</h4>
+                                                    <h4 class="fw-bold">Announcements</h4>
                                                     <p class="mb-0">
-                                                        The documentation provides clear-cut material and is instructed
-                                                        with such a way
-                                                        that every user can understand.
+                                                        Admins can post community announcements visible to all residents and staff.
                                                     </p>
                                                 </div>
                                             </div>
@@ -294,16 +268,14 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-file text-white"></i>
+                                                            <i class="fe fe-shield text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">User Pages</h4>
+                                                    <h4 class="fw-bold">Role-Based Access</h4>
                                                     <p class="mb-0">
-                                                        The most advanced "User Pages" are included in this template,
-                                                        like registration,
-                                                        profile, and log-in pages, etc.
+                                                        Four roles — Admin, Resident, Technician, Security — each with tailored access rights.
                                                     </p>
                                                 </div>
                                             </div>
@@ -316,16 +288,14 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-aperture text-white"></i>
+                                                            <i class="fe fe-bar-chart text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">Modern UI Widgets</h4>
+                                                    <h4 class="fw-bold">Reports &amp; Dashboard</h4>
                                                     <p class="mb-0">
-                                                        Modern widgets are included in this template. Please check out
-                                                        the best option
-                                                        that suits for your projects.
+                                                        Overview dashboards and reports for admins to track system activity across all modules.
                                                     </p>
                                                 </div>
                                             </div>
@@ -338,15 +308,14 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-box text-white"></i>
+                                                            <i class="fe fe-lock text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">100+ UI Components</h4>
+                                                    <h4 class="fw-bold">Secure Authentication</h4>
                                                     <p class="mb-0">
-                                                        Tempor accusam magna ipsum ea et. Sanctus aliquyam ea duo sit
-                                                        consetetur Labore stet sed.. Labore stet sed.
+                                                        Password-protected accounts with role enforcement on every route and session management.
                                                     </p>
                                                 </div>
                                             </div>
@@ -359,15 +328,14 @@
                                                 <div class="counter-body-2">
                                                     <div class="bg-img mb-2 text-left hexagon-wrapper">
                                                         <div class="counter-icon hexagon">
-                                                            <i class="fe fe-file-text text-white"></i>
+                                                            <i class="fe fe-activity text-white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="text-left counter-body">
-                                                    <h4 class="fw-bold">Validating Forms</h4>
+                                                    <h4 class="fw-bold">Real-Time Tracking</h4>
                                                     <p class="mb-0">
-                                                        Tempor accusam magna ipsum ea et. Sanctus aliquyam ea duo sit
-                                                        consetetur. Labore stet sed. Labore stet sed.
+                                                        Live status on requests, bookings, and visitor activity across the entire community.
                                                     </p>
                                                 </div>
                                             </div>
@@ -398,7 +366,57 @@
                                                                                 <div class="bg-transparent">
                                                                                     <div class="counter-status">
                                                                                         <div class="counter-icon">
-                                                                                            <i class="fe fe-code"></i>
+                                                                                            <i class="fe fe-users"></i>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="test-body text-center">
+                                                                                            <h1 class=" mb-0">
+                                                                                                <span
+                                                                                                    class="counter fw-semibold counter">4</span>
+                                                                                                <span class=""></span>
+                                                                                            </h1>
+                                                                                            <div class="counter-text">
+                                                                                                <h5
+                                                                                                    class="font-weight-normal mb-0">
+                                                                                                    User Roles</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xl-3 col-md-6 col-lg-3">
+                                                                            <div class="card reveal">
+                                                                                <div class="bg-transparent">
+                                                                                    <div class="counter-status">
+                                                                                        <div class="counter-icon">
+                                                                                            <i
+                                                                                                class="fe fe-layers"></i>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="test-body text-center">
+                                                                                            <h1 class=" mb-0">
+                                                                                                <span
+                                                                                                    class="counter fw-semibold counter">4</span>
+                                                                                                <span class="">+</span>
+                                                                                            </h1>
+                                                                                            <div class="counter-text">
+                                                                                                <h5
+                                                                                                    class="font-weight-normal mb-0">
+                                                                                                    Core Modules</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xl-3 col-md-6 col-lg-3">
+                                                                            <div class="card reveal">
+                                                                                <div class="bg-transparent">
+                                                                                    <div class="counter-status">
+                                                                                        <div class="counter-icon">
+                                                                                            <i
+                                                                                                class="fe fe-home"></i>
                                                                                         </div>
                                                                                         <div
                                                                                             class="test-body text-center">
@@ -410,7 +428,7 @@
                                                                                             <div class="counter-text">
                                                                                                 <h5
                                                                                                     class="font-weight-normal mb-0">
-                                                                                                    HTML Pages</h5>
+                                                                                                    Residents Served</h5>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -422,69 +440,18 @@
                                                                                 <div class="bg-transparent">
                                                                                     <div class="counter-status">
                                                                                         <div class="counter-icon">
-                                                                                            <i
-                                                                                                class="fe fe-aperture"></i>
+                                                                                            <i class="fe fe-clock"></i>
                                                                                         </div>
                                                                                         <div
                                                                                             class="test-body text-center">
                                                                                             <h1 class=" mb-0">
                                                                                                 <span
-                                                                                                    class="counter fw-semibold counter">60</span>
-                                                                                                <span class="">+</span>
+                                                                                                    class="fw-semibold">24/7</span>
                                                                                             </h1>
                                                                                             <div class="counter-text">
                                                                                                 <h5
                                                                                                     class="font-weight-normal mb-0">
-                                                                                                    Plugins</h5>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-xl-3 col-md-6 col-lg-3">
-                                                                            <div class="card reveal">
-                                                                                <div class="bg-transparent">
-                                                                                    <div class="counter-status">
-                                                                                        <div class="counter-icon">
-                                                                                            <i
-                                                                                                class="fe fe-file-text"></i>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="test-body text-center">
-                                                                                            <h1 class=" mb-0">
-                                                                                                <span
-                                                                                                    class="counter fw-semibold counter">10</span>
-                                                                                                <span class="">+</span>
-                                                                                            </h1>
-                                                                                            <div class="counter-text">
-                                                                                                <h5
-                                                                                                    class="font-weight-normal mb-0">
-                                                                                                    Form Elements</h5>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-xl-3 col-md-6 col-lg-3">
-                                                                            <div class="card reveal">
-                                                                                <div class="bg-transparent">
-                                                                                    <div class="counter-status">
-                                                                                        <div class="counter-icon">
-                                                                                            <i class="fe fe-layers"></i>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="test-body text-center">
-                                                                                            <h1 class=" mb-0">
-                                                                                                <span
-                                                                                                    class="counter fw-semibold counter">30</span>
-                                                                                                <span class="">+</span>
-                                                                                            </h1>
-                                                                                            <div class="counter-text">
-                                                                                                <h5
-                                                                                                    class="font-weight-normal mb-0">
-                                                                                                    Widgets</h5>
+                                                                                                    System Access</h5>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -513,7 +480,7 @@
                                 <h4 class="text-center fw-semibold landing-card-header">Our Mission</h4>
                                 <span class="landing-title"></span>
                                 <div class="text-center">
-                                    <h2 class="text-center fw-semibold">Our mission is to make work meaningful.
+                                    <h2 class="text-center fw-semibold">Built for residential communities. Designed to simplify life.
                                     </h2>
                                 </div>
                                 <div class="reveal">
@@ -807,14 +774,9 @@
                                             </div>
                                             <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12">
                                                 <div class="working-content content-1">
-                                                    <h4 class="mb-3">Design Quality </h4>
-                                                    <p class="title-desc text-muted">No ipsum rebum est invidunt eos
-                                                        dolore. Sed sea ipsum vero invidunt rebum et erat, tempor
-                                                        consetetur sadipscing no ipsum,.</p>
-                                                    <p class="title-desc text-muted mb-0">Ut dolor sed aliquyam at lorem
-                                                        ipsum labore diam eos. Tempor labore dolor justo nonumy stet,
-                                                        sanctus amet sed accusam elitr amet eirmod. No ea gubergren
-                                                        dolores elitr labore ipsum..</p>
+                                                    <h4 class="mb-3">Efficient Maintenance</h4>
+                                                    <p class="title-desc text-muted">From submission to resolution, maintenance requests are tracked end-to-end so nothing falls through the cracks.</p>
+                                                    <p class="title-desc text-muted mb-0">Residents submit requests online. Admins assign technicians. Technicians update status. Everyone stays informed at every step.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -823,14 +785,9 @@
                                         <div class="row align-items-center">
                                             <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 myorder-2">
                                                 <div class="working-content content-2">
-                                                    <h4 class="mb-3">Documentation</h4>
-                                                    <p class="title-desc text-muted">Dolore voluptua sed kasd labore
-                                                        erat sed ipsum rebum sit, sanctus invidunt est sed sanctus.
-                                                        Dolor clita invidunt elitr dolore.</p>
-                                                    <p class="title-desc text-muted mb-0">Lorem dolores labore stet
-                                                        rebum invidunt voluptua at dolores lorem, amet dolor dolore
-                                                        dolor ut sadipscing, dolore sanctus accusam diam sanctus kasd
-                                                        gubergren, ipsum dolor lorem amet stet, aliquyam takimata.</p>
+                                                    <h4 class="mb-3">Connected Community</h4>
+                                                    <p class="title-desc text-muted">Residents, security, technicians, and admins work in one unified system with full visibility into what matters to each role.</p>
+                                                    <p class="title-desc text-muted mb-0">Visitor logs, facility bookings, announcements, and reports — all accessible from a single dashboard, tailored to your role.</p>
                                                 </div>
                                             </div>
                                             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 myorder-1">
@@ -2242,635 +2199,17 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                     </div>
                     <!-- ROW-3 CLOSED -->
 
-                    <!-- ROW-4 OPEN -->
-                    <div class="section testimonial-owl-landing">
-                        <div class="container">
-                            <div class="row">
-                                <div class="card bg-transparent mb-0">
-                                    <h4 class="text-center fw-semibold text-white landing-card-header">Features</h4>
-                                    <span class="landing-title"></span>
-                                    <div class="demo-screen-skin code-quality" id="dependencies">
-                                        <div class="text-center p-0">
-                                            <h2 class="text-center fw-semibold text-white">Features Used in
-                                                Spruha Admin Template</h2>
-                                            <div class="row justify-content-center">
-                                                <div class="col-lg-12 px-0">
-                                                    <div class="feature-logos mt-5">
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/1.png">
-                                                            <h5 class="mt-3 text-white">Bootstrap5</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/2.png">
-                                                            <h5 class="mt-3 text-white">HTML5</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/3.png">
-                                                            <h5 class="mt-3 text-white">JQuery</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/4.png">
-                                                            <h5 class="mt-3 text-white">Sass</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/5.png">
-                                                            <h5 class="mt-3 text-white">Gulp</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/6.png">
-                                                            <h5 class="mt-3 text-white">NPM</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/1.png">
-                                                            <h5 class="mt-3 text-white">Bootstrap5</h5>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="../assets/landing/web/2.png">
-                                                            <h5 class="mt-3 text-white">HTML5</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW-4 CLOSED -->
-
-                    <!-- ROW-5 OPEN -->
-                    <div class="section">
-                        <div class="container">
-                            <div class="row">
-                                <section class="sptb demo-screen-demo" id="faqs">
-                                    <div class="container">
-                                        <div class="row align-items-center">
-                                            <h4 class="text-center fw-semibold">Highlights</h4>
-                                            <span class="landing-title"></span>
-                                            <h2 class="text-center fw-semibold">Template Highlights</h2>
-                                            <div class="col-lg-12">
-                                                <div class="row justify-content-center">
-                                                    <p class="col-lg-9 text-default sub-text mb-7">
-                                                        The Spruha admin template is one of the modern dashboard
-                                                        templates.
-                                                        It is also a premium admin dashboard with high-end features,
-                                                        where users can easily customize
-                                                        or change their projects according to their choice. Please take
-                                                        a quick look at our template highlights.
-                                                    </p>
-                                                </div>
-                                                <div class="row" id="grid">
-                                                    <div class="col-lg-6">
-                                                        <div class="col-md-12 grid-item px-0">
-                                                            <div
-                                                                class="card card-collapsed bg-primary-transparent bg-transparent border p-0 reveal">
-                                                                <div class="card-header grid-link"
-                                                                    data-bs-toggle="card-collapse">
-                                                                    <a href="#"
-                                                                        class="card-options-collapse h5 fw-bold card-title mb-0 text-primary">
-                                                                        <span class="card-controls">
-                                                                            <span class="expand"><i
-                                                                                    class="fe fe-plus"></i></span>
-                                                                            <span class="shrink"><i
-                                                                                    class="fe fe-minus"></i></span>
-                                                                        </span>
-                                                                        Switch Easily From Vertical to Horizontal
-                                                                        Menu</a>
-                                                                </div>
-                                                                <div class="card-body pt-0">
-                                                                    <p>
-                                                                        The Spruha – Bootstrap 5 Admin & Dashboard
-                                                                        Template is available in both vertical and
-                                                                        horizontal menus.
-                                                                        Both menus are managed by single assets. Where
-                                                                        users can easily switch from vertical to
-                                                                        horizontal menus.
-                                                                    </p>
-                                                                    <p class="mt-2 mb-3">
-                                                                        <span class="fw-bold">Note: </span>Please Refer
-                                                                        full Documentation
-                                                                        for more details.
-                                                                    </p>
-                                                                    <a href="#" target="_blank"
-                                                                        class="btn btn-outline-primary tx-13">Click
-                                                                        here</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12 grid-item  px-0">
-                                                            <div
-                                                                class="card card-collapsed bg-success-transparent bg-transparent border p-0 reveal">
-                                                                <div class="card-header grid-link"
-                                                                    data-bs-toggle="card-collapse">
-                                                                    <a href="#"
-                                                                        class="card-options-collapse  h5 fw-bold card-title mb-0 text-success">
-                                                                        <span class="card-controls">
-                                                                            <span class="expand"><i
-                                                                                    class="fe fe-plus"></i></span>
-                                                                            <span class="shrink"><i
-                                                                                    class="fe fe-minus"></i></span>
-                                                                        </span>Switch
-                                                                        Easily From LTR to RTL Version</a>
-                                                                </div>
-                                                                <div class="card-body pt-0">
-                                                                    <p class="mb-3">
-                                                                        The Spruha – Bootstrap 5 Admin & Dashboard
-                                                                        Template is available in LRT & RTL versions with
-                                                                        single assets.
-                                                                        Using those single assets, it’s very easy to
-                                                                        switch from one version to another version.
-                                                                    </p>
-                                                                    <p class="mt-2 mb-3">
-                                                                        <span class="fw-bold">Note: </span>Please Refer
-                                                                        full Documentation
-                                                                        for more details.
-                                                                    </p>
-                                                                    <a href="#" target="_blank"
-                                                                        class="btn btn-outline-success tx-13">Click
-                                                                        here</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12 grid-item  px-0">
-                                                            <div
-                                                                class="card card-collapsed bg-info-transparent  bg-transparent border p-0 reveal">
-                                                                <div class="card-header grid-link"
-                                                                    data-bs-toggle="card-collapse">
-                                                                    <a href="#"
-                                                                        class="card-options-collapse  h5 fw-bold card-title mb-0 text-info">
-                                                                        <span class="card-controls">
-                                                                            <span class="expand"><i
-                                                                                    class="fe fe-plus"></i></span>
-                                                                            <span class="shrink"><i
-                                                                                    class="fe fe-minus"></i></span>
-                                                                        </span>Switch
-                                                                        Easily From One Color to Another Color style</a>
-                                                                </div>
-                                                                <div class="card-body pt-0">
-                                                                    <p class="mb-3">
-                                                                        The Spruha – Bootstrap 5 Admin & Dashboard
-                                                                        Template is available in different types of
-                                                                        color styles.
-                                                                        Where the users can change their template
-                                                                        completely with those color styles.
-                                                                    </p>
-                                                                    <p class="mt-2 mb-3">
-                                                                        <span class="fw-bold">Note: </span>Please Refer
-                                                                        full Documentation
-                                                                        for more details.
-                                                                    </p>
-                                                                    <a href="#" target="_blank"
-                                                                        class="btn btn-outline-info tx-13">Click
-                                                                        here</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="col-md-12 grid-item  px-0">
-                                                            <div
-                                                                class="card card-collapsed bg-secondary-transparent bg-transparent border  p-0 reveal">
-                                                                <div class="card-header grid-link"
-                                                                    data-bs-toggle="card-collapse">
-                                                                    <a href="#"
-                                                                        class="card-options-collapse  h5 fw-bold card-title mb-0 text-secondary">
-                                                                        <span class="card-controls">
-                                                                            <span class="expand"><i
-                                                                                    class="fe fe-plus"></i></span>
-                                                                            <span class="shrink"><i
-                                                                                    class="fe fe-minus"></i></span>
-                                                                        </span>Switch
-                                                                        Easily From Full Width to Boxed Layout</a>
-                                                                </div>
-                                                                <div class="card-body pt-0">
-                                                                    <p>
-                                                                        The Spruha – Bootstrap 5 Admin & Dashboard
-                                                                        Template is also available in two different
-                                                                        types of layouts
-                                                                        “Full Width” and “Boxed” Layouts. So that user
-                                                                        can switch their dashboard from one layout to
-                                                                        another
-                                                                        layout effortlessly.
-                                                                    </p>
-                                                                    <p class="mt-2 mb-3">
-                                                                        <span class="fw-bold">Note: </span>Please Refer
-                                                                        full Documentation
-                                                                        for more details.
-                                                                    </p>
-                                                                    <a href="#" target="_blank"
-                                                                        class="btn btn-outline-secondary tx-13">Click
-                                                                        here</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12 grid-item  px-0">
-                                                            <div
-                                                                class="card card-collapsed bg-warning-transparent bg-transparent border  p-0 reveal">
-                                                                <div class="card-header grid-link"
-                                                                    data-bs-toggle="card-collapse">
-                                                                    <a href="#"
-                                                                        class="card-options-collapse  h5 fw-bold card-title mb-0 text-warning">
-                                                                        <span class="card-controls">
-                                                                            <span class="expand"><i
-                                                                                    class="fe fe-plus"></i></span>
-                                                                            <span class="shrink"><i
-                                                                                    class="fe fe-minus"></i></span>
-                                                                        </span>Change
-                                                                        Easily Side Menu Styles</a>
-                                                                </div>
-                                                                <div class="card-body pt-0">
-                                                                    <p>
-                                                                        The Spruha – Bootstrap 5 Admin & Dashboard
-                                                                        Template is also available in different types of
-                                                                        Side Menu Styles.
-                                                                        Where the users can change their Side Menu
-                                                                        styles by using single assets.
-                                                                    </p>
-                                                                    <p class="mt-2 mb-3">
-                                                                        <span class="fw-bold">Note: </span>Please Refer
-                                                                        full Documentation
-                                                                        for more details.
-                                                                    </p>
-                                                                    <a href="#" target="_blank"
-                                                                        class="btn btn-outline-warning tx-13">Click
-                                                                        here</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12 grid-item  px-0">
-                                                            <div
-                                                                class="card card-collapsed bg-danger-transparent bg-transparent border  p-0 reveal">
-                                                                <div class="card-header grid-link"
-                                                                    data-bs-toggle="card-collapse">
-                                                                    <a href="#"
-                                                                        class="card-options-collapse  h5 fw-bold card-title mb-0 text-danger">
-                                                                        <span class="card-controls">
-                                                                            <span class="expand"><i
-                                                                                    class="fe fe-plus"></i></span>
-                                                                            <span class="shrink"><i
-                                                                                    class="fe fe-minus"></i></span>
-                                                                        </span>Switch
-                                                                        Easily From Fixed to Scrollable Layout</a>
-                                                                </div>
-                                                                <div class="card-body pt-0">
-                                                                    <p>
-                                                                        The Spruha – Bootstrap 5 Admin & Dashboard
-                                                                        Template is also available in two
-                                                                        different types of layouts "Fixed Layout" and
-                                                                        "Scrollable Layout". Here users
-                                                                        can switch their Template from one layout to
-                                                                        another layout easily.
-                                                                    </p>
-                                                                    <p class="mt-2 mb-3">
-                                                                        <span class="fw-bold">Note: </span>Please Refer
-                                                                        full Documentation
-                                                                        for more details.
-                                                                    </p>
-                                                                    <a href="#" target="_blank"
-                                                                        class="btn btn-outline-danger tx-13">Click
-                                                                        here</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW-5 CLOSED -->
-
-
-                    <!-- ROW-6 OPEN -->
-                    <div class="bg-landing section">
-                        <div class="container">
-                            <div class="row">
-                                <h4 class="text-center fw-semibold landing-card-header">Choose a plan </h4>
-                                <span class="landing-title"></span>
-                                <h2 class="text-center fw-semibold">Find the <span class="text-primary">Perfect
-                                        Plan</span> for your Business.</h2>
-                                <div class="pricing-tabs text-center">
-                                    <div class="pri-tabs-heading text-center mt-3">
-                                        <ul class="nav nav-price">
-                                            <li><a data-bs-toggle="tab" href="#month">Monthly</a></li>
-                                            <li><a class="active show" data-bs-toggle="tab"
-                                                    href="#annualyear">Annual</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="tab-content text-start">
-                                        <div class="tab-pane pb-0 active show" id="annualyear">
-                                            <div class="row d-flex align-items-center justify-content-center">
-                                                <div class="col-lg-4 col-xl-4 col-md-8 col-sm-12">
-                                                    <div class="card p-3 pricing-card reveal revealrotate">
-                                                        <div class="card-header d-block text-justified pt-2">
-                                                            <p class="fs-18 fw-semibold mb-1">Basic</p>
-                                                            <p class="text-justify fw-semibold mb-1"> <span
-                                                                    class="fs-30 me-2">$</span><span
-                                                                    class="fs-30 me-1">399</span><span
-                                                                    class="fs-25"><span
-                                                                        class="op-0-5 text-muted text-20">/</span>
-                                                                    year</span></p>
-                                                            <p class="fs-13 mb-1">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Iure quos debitis
-                                                                aliquam .</p>
-                                                            <p class="fs-13 mb-3 text-secondary">Billed monthly
-                                                                on regular basis!</p>
-                                                        </div>
-                                                        <div class="card-body py-2">
-                                                            <ul class="text-justify pricing-body ps-0 mb-0">
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i><strong>
-                                                                        2 Free</strong> Domain Name</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i>
-                                                                    <strong>3 </strong> One-Click Apps
-                                                                </li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        1 </strong> Databases</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        Unlimited </strong> Cloud Storage</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        Money </strong> BackGuarantee</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        24/7</strong> support</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="card-footer text-center border-top-0 pt-1">
-                                                            <button class="btn btn-lg btn-outline-secondary btn-block">
-                                                                <span class="ms-4 me-4">Select</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-8 col-sm-12">
-                                                    <div
-                                                        class="card p-3 border bg-primary border-primary pricing-card advanced reveal revealrotate">
-                                                        <div class="card-header d-block text-justified pt-2 bd-white-2">
-                                                            <p class="fs-18 fw-semibold mb-1 pe-0">Advanced<span
-                                                                    class="badge bg-white text-primary float-end font-weight-normal">Limited
-                                                                    Deal</span></p>
-                                                            <p class="text-justify fw-semibold mb-1"> <span
-                                                                    class="fs-30 me-2">$</span><span
-                                                                    class="fs-30 me-1">1,299</span><span
-                                                                    class="fs-25"><span
-                                                                        class="op-0-5 text-muted text-20">/</span>
-                                                                    year</span></p>
-                                                            <p class="fs-13 mb-2">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Iure quos debitis
-                                                                aliquam .</p>
-                                                            <p class="fs-13 mb-1 text-primary">Billed monthly on
-                                                                regular basis!</p>
-                                                        </div>
-                                                        <div class="card-body py-2">
-                                                            <ul class="text-justify pricing-body ps-0 my-5">
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i>
-                                                                    <strong> 5 Free</strong> Domain Name
-                                                                </li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>5
-                                                                    </strong> One-Click Apps</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        3 </strong> Databases</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        Unlimited </strong> Cloud Storage</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        Money </strong> BackGuarantee</li>
-                                                                <li class=""><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        24/7</strong> support</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="card-footer text-center border-top-0 pt-1">
-                                                            <button class="btn btn-lg btn-white text-primary btn-block">
-                                                                <span class="ms-4 me-4">Select</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-8 col-sm-12">
-                                                    <div class="card p-3 pricing-card reveal revealrotate">
-                                                        <div class="card-header d-block text-justified pt-2">
-                                                            <p class="fs-18 fw-semibold mb-1">Regular</p>
-                                                            <p class="text-justify fw-semibold mb-1"> <span
-                                                                    class="fs-30 me-2">$</span><span
-                                                                    class="fs-30 me-1">899</span><span
-                                                                    class="fs-25"><span
-                                                                        class="op-0-5 text-muted text-20">/</span>
-                                                                    year</span></p>
-                                                            <p class="fs-13 mb-1">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Iure quos debitis
-                                                                aliquam .</p>
-                                                            <p class="fs-13 mb-3  text-danger">Billed monthly on
-                                                                regular basis!</p>
-                                                        </div>
-                                                        <div class="card-body py-2">
-                                                            <ul class="text-justify pricing-body ps-0 mb-0">
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-danger p-2 fs-16"></i><strong>
-                                                                        1 Free</strong> Domain Name</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-danger p-2 fs-16"></i><strong>4
-                                                                    </strong> One-Click Apps</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-danger p-2 fs-16"></i><strong>
-                                                                        2 </strong> Databases</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline text-gray p-2 fs-16"></i><strong>
-                                                                        Unlimited </strong> Cloud Storage</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline text-gray p-2 fs-16"></i><strong>
-                                                                        Money </strong> BackGuarantee</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline text-gray p-2 fs-16"></i><strong>
-                                                                        24/7</strong> support</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="card-footer text-center border-top-0 pt-1">
-                                                            <button class="btn btn-lg btn-outline-danger btn-block">
-                                                                <span class="ms-4 me-4">Select</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="month">
-                                            <div class="row d-flex align-items-center justify-content-center">
-                                                <div class="col-lg-4 col-xl-4 col-md-8 col-sm-12">
-                                                    <div class="card p-3 pricing-card">
-                                                        <div class="card-header d-block text-justified pt-2">
-                                                            <p class="fs-18 fw-semibold mb-1">Basic</p>
-                                                            <p class="text-justify fw-semibold mb-1"> <span
-                                                                    class="fs-30 me-2">$</span><span
-                                                                    class="fs-30 me-1">39</span><span
-                                                                    class="fs-25"><span
-                                                                        class="op-0-5 text-muted text-20">/</span>
-                                                                    month</span></p>
-                                                            <p class="fs-13 mb-1">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Iure quos debitis
-                                                                aliquam .</p>
-                                                            <p class="fs-13 mb-1 text-secondary">Billed monthly
-                                                                on regular basis!</p>
-                                                        </div>
-                                                        <div class="card-body pt-2">
-                                                            <ul class="text-justify pricing-body ps-0">
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i><strong>
-                                                                        2 Free</strong> Domain Name</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i>
-                                                                    <strong>3 </strong> One-Click Apps
-                                                                </li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        1 </strong> Databases</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        Unlimited </strong> Cloud Storage</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        Money </strong> BackGuarantee</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline p-2 fs-16 text-gray"></i><strong>
-                                                                        24/7</strong> support</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="card-footer text-center border-top-0 pt-1">
-                                                            <button class="btn btn-lg btn-outline-secondary btn-block">
-                                                                <span class="ms-4 me-4">Select</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-8 col-sm-12">
-                                                    <div class="card p-3 border-primary pricing-card advanced">
-                                                        <div class="card-header d-block text-justified pt-2">
-                                                            <p class="fs-18 fw-semibold mb-1 pe-0">Advanced<span
-                                                                    class="tag bg-primary text-white float-end">Limited
-                                                                    Deal</span></p>
-                                                            <p class="text-justify fw-semibold mb-1"> <span
-                                                                    class="fs-30 me-2">$</span><span
-                                                                    class="fs-30 me-1">199</span><span
-                                                                    class="fs-25"><span
-                                                                        class="op-0-5 text-muted text-20">/</span>
-                                                                    month</span></p>
-                                                            <p class="fs-13 mb-2">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Iure quos debitis
-                                                                aliquam .</p>
-                                                            <p class="fs-13 mb-1 text-primary">Billed monthly on
-                                                                regular basis!</p>
-                                                        </div>
-                                                        <div class="card-body pt-2">
-                                                            <ul class="text-justify pricing-body ps-0">
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i>
-                                                                    <strong> 5 Free</strong> Domain Name
-                                                                </li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>5
-                                                                    </strong> One-Click Apps</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        3 </strong> Databases</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        Unlimited </strong> Cloud Storage</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        Money </strong> BackGuarantee</li>
-                                                                <li class="mb-5"><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i><strong>
-                                                                        24/7</strong> support</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="card-footer text-center border-top-0 pt-1">
-                                                            <button
-                                                                class="btn btn-lg btn-primary-gradient text-white btn-block">
-                                                                <span class="ms-4 me-4">Select</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-xl-4 col-md-8 col-sm-12">
-                                                    <div class="card p-3 pricing-card">
-                                                        <div class="card-header d-block text-justified pt-2">
-                                                            <p class="fs-18 fw-semibold mb-1">Regular</p>
-                                                            <p class="text-justify fw-semibold mb-1"> <span
-                                                                    class="fs-30 me-2">$</span><span
-                                                                    class="fs-30 me-1">69</span><span
-                                                                    class="fs-25"><span
-                                                                        class="op-0-5 text-muted text-20">/</span>
-                                                                    month</span></p>
-                                                            <p class="fs-13 mb-1">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Iure quos debitis
-                                                                aliquam .</p>
-                                                            <p class="fs-13 mb-1  text-danger">Billed monthly on
-                                                                regular basis!</p>
-                                                        </div>
-                                                        <div class="card-body pt-2">
-                                                            <ul class="text-justify pricing-body ps-0">
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-danger p-2 fs-16"></i><strong>
-                                                                        1 Free</strong> Domain Name</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-danger p-2 fs-16"></i><strong>4
-                                                                    </strong> One-Click Apps</li>
-                                                                <li><i
-                                                                        class="mdi mdi-checkbox-marked-circle-outline text-danger p-2 fs-16"></i><strong>
-                                                                        2 </strong> Databases</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline text-gray p-2 fs-16"></i><strong>
-                                                                        Unlimited </strong> Cloud Storage</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline text-gray p-2 fs-16"></i><strong>
-                                                                        Money </strong> BackGuarantee</li>
-                                                                <li class="text-muted"><i
-                                                                        class="mdi mdi-close-circle-outline text-gray p-2 fs-16"></i><strong>
-                                                                        24/7</strong> support</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="card-footer text-center border-top-0 pt-1">
-                                                            <button class="btn btn-lg btn-outline-danger btn-block">
-                                                                <span class="ms-4 me-4">Select</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW-6 CLOSED -->
 
                     <!-- ROW-7 OPEN -->
                     <div class="section" id="Faqs">
                         <div class="container">
                             <div class="row">
-                                <h4 class="text-center fw-semibold landing-card-header">FAQ'S ?</h4>
+                                <h4 class="text-center fw-semibold landing-card-header">FAQ</h4>
                                 <span class="landing-title"></span>
-                                <h2 class="text-center fw-semibold">We are here to help you</h2>
+                                <h2 class="text-center fw-semibold">Common Questions</h2>
                                 <div class="row justify-content-center">
                                     <p class="col-xl-9 wow fadeInUp text-default sub-text mb-5" data-wow-delay="0s">
-                                        The Spruha admin template is one of the modern dashboard templates.
-                                        It is also a premium admin dashboard with high-end features, where users
-                                        can easily customize
-                                        or change their projects according to their choice. Please take a quick
-                                        look at our template highlights.
+                                        Quick answers about how UnitCare works.
                                     </p>
                                 </div>
                                 <section class="sptb demo-screen-demo" id="faqs">
@@ -2882,20 +2221,12 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                                                     <div class="card-header grid-link" data-bs-toggle="card-collapse">
                                                         <a href="#"
                                                             class="card-options-collapse h5 fw-bold card-title mb-0  text-primary"><span
-                                                                class="me-3 fs-18 fw-bold">01.</span>Can
-                                                            i get a free trial before purchase ?</a>
+                                                                class="me-3 fs-18 fw-bold">01.</span>Who can use UnitCare?</a>
                                                     </div>
                                                     <div class="card-body pt-0">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Iure quos debitis aliquam .
+                                                            UnitCare supports four roles: Admin, Resident, Technician, and Security. Each role sees only the features relevant to them.
                                                         </p>
-                                                        <p class="mt-2 mb-3">
-                                                            <span class="fw-bold">Note: </span>Please Refer
-                                                            support section for more information.
-                                                        </p>
-                                                        <a href="#" target="_blank"
-                                                            class="btn btn-outline-primary tx-13">Click here</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2905,20 +2236,12 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                                                     <div class="card-header grid-link" data-bs-toggle="card-collapse">
                                                         <a href="#"
                                                             class="card-options-collapse  h5 fw-bold card-title mb-0 text-success"><span
-                                                                class="me-3 fs-18 fw-bold">02.</span>What
-                                                            type of files i will get after purchase ?</a>
+                                                                class="me-3 fs-18 fw-bold">02.</span>How do I submit a maintenance request?</a>
                                                     </div>
                                                     <div class="card-body pt-0">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Iure quos debitis aliquam.
+                                                            Log in as a Resident, go to Maintenance &gt; My Requests, and fill in the request form. You can track its status from the same page.
                                                         </p>
-                                                        <p class="mt-2 mb-3">
-                                                            <span class="fw-bold">Note: </span>Please Refer
-                                                            support section for more information.
-                                                        </p>
-                                                        <a href="#" target="_blank"
-                                                            class="btn btn-outline-success tx-13">Click here</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2928,21 +2251,12 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                                                     <div class="card-header grid-link" data-bs-toggle="card-collapse">
                                                         <a href="#"
                                                             class="card-options-collapse  h5 fw-bold card-title mb-0 text-secondary"><span
-                                                                class="me-3 fs-18 fw-bold">03.</span>What
-                                                            is a single Application</a>
+                                                                class="me-3 fs-18 fw-bold">03.</span>Can I book a facility?</a>
                                                     </div>
                                                     <div class="card-body pt-0">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Iure quos debitis aliquam.
+                                                            Yes. Residents can browse available facilities, check availability, and submit a booking request for admin approval.
                                                         </p>
-                                                        <p class="mt-2 mb-3">
-                                                            <span class="fw-bold">Note: </span>Please Refer
-                                                            support section for more information.
-                                                        </p>
-                                                        <a href="#" target="_blank"
-                                                            class="btn btn-outline-secondary tx-13">Click
-                                                            here</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2952,20 +2266,12 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                                                     <div class="card-header grid-link" data-bs-toggle="card-collapse">
                                                         <a href="#"
                                                             class="card-options-collapse  h5 fw-bold card-title mb-0 text-warning"><span
-                                                                class="me-3 fs-18 fw-bold">04.</span>How
-                                                            to get future updates ?</a>
+                                                                class="me-3 fs-18 fw-bold">04.</span>How are visitors managed?</a>
                                                     </div>
                                                     <div class="card-body pt-0">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Iure quos debitis aliquam.
+                                                            Residents register expected visitors in advance. Security staff uses the Check-In / Out page to record arrivals and departures.
                                                         </p>
-                                                        <p class="mt-2 mb-3">
-                                                            <span class="fw-bold">Note: </span>Please Refer
-                                                            support section for more information.
-                                                        </p>
-                                                        <a href="#" target="_blank"
-                                                            class="btn btn-outline-warning tx-13">Click here</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2975,20 +2281,12 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                                                     <div class="card-header grid-link" data-bs-toggle="card-collapse">
                                                         <a href="#"
                                                             class="card-options-collapse  h5 fw-bold card-title mb-0 text-danger"><span
-                                                                class="me-3 fs-18 fw-bold">05.</span>Do
-                                                            you provide support ?</a>
+                                                                class="me-3 fs-18 fw-bold">05.</span>How do I get an account?</a>
                                                     </div>
                                                     <div class="card-body pt-0">
                                                         <p>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Iure quos debitis aliquam.
+                                                            Accounts are created by the administrator. Contact your building management to get access.
                                                         </p>
-                                                        <p class="mt-2 mb-3">
-                                                            <span class="fw-bold">Note: </span>Please Refer
-                                                            support section for more information.
-                                                        </p>
-                                                        <a href="#" target="_blank"
-                                                            class="btn btn-outline-danger tx-13">Click here</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3003,144 +2301,6 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                     </div>
                     <!-- ROW-7 CLOSED -->
 
-                    <!-- ROW-9 OPEN -->
-                    <div class="testimonial-owl-landing section pb-0" id="Clients">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card bg-transparent">
-                                        <div class="card-body pt-5">
-                                            <h4 class="text-center fw-semibold">Testimonials </h4>
-                                            <span class="landing-title"></span>
-                                            <h2 class="text-center fw-semibold text-white mb-5">What People Are
-                                                Saying About Our Product.</h2>
-                                            <div class="testimonial-carousel">
-                                                <div class="slide text-center">
-                                                    <div class="row">
-                                                        <div class="col-xl-8 col-md-12 d-block mx-auto">
-                                                            <div class="testimonia">
-                                                                <p class="text-white-80">
-                                                                    <i class="fa fa-quote-left fs-20 text-white-80"></i>
-                                                                    Lorem ipsum dolor sit amet,
-                                                                    consectetur adipisicing elit. Quod eos id
-                                                                    officiis hic tenetur quae quaerat
-                                                                    ad velit ab. Lorem ipsum dolor sit amet,
-                                                                    consectetur adipisicing elit.
-                                                                    Dolore cum accusamus eveniet molestias
-                                                                    voluptatum inventore laboriosam
-                                                                    labore sit, aspernatur praesentium iste
-                                                                    impedit quidem dolor veniam.
-                                                                </p>
-                                                                <h3 class="title">Elizabeth</h3>
-                                                                <span class="post">Web Developer</span>
-                                                                <div class="rating-stars block my-rating-5 mb-5"
-                                                                    data-rating="4"></div>
-                                                                <div class="owl-controls clickable">
-                                                                    <div class="owl-pagination">
-                                                                        <div class="owl-page active">
-                                                                            <span class=""></span>
-                                                                        </div>
-                                                                        <div class="owl-page ">
-                                                                            <span class=""></span>
-                                                                        </div>
-                                                                        <div class="owl-page">
-                                                                            <span class=""></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide text-center">
-                                                    <div class="row">
-                                                        <div class="col-xl-8 col-md-12 d-block mx-auto">
-                                                            <div class="testimonia">
-                                                                <p class="text-white-80"><i
-                                                                        class="fa fa-quote-left fs-20"></i> Nemo
-                                                                    enim ipsam
-                                                                    voluptatem quia voluptas sit aspernatur aut
-                                                                    odit aut fugit, sed quia
-                                                                    consequuntur magni dolores eos qui ratione
-                                                                    voluptatem sequi nesciunt. Neque
-                                                                    porro quisquam est, qui dolorem ipsum quia
-                                                                    dolor sit amet, consectetur,
-                                                                    adipisci velit, sed quia non numquam eius
-                                                                    modi tempora incidunt ut labore.
-                                                                </p>
-                                                                <div class="testimonia-data">
-                                                                    <h3 class="title">williamson</h3>
-                                                                    <span class="post">Web Developer</span>
-                                                                    <div class="rating-stars">
-                                                                        <div class="rating-stars block my-rating-5 mb-5"
-                                                                            data-rating="5"></div>
-                                                                        <div class="owl-controls clickable">
-                                                                            <div class="owl-pagination">
-                                                                                <div class="owl-page ">
-                                                                                    <span class=""></span>
-                                                                                </div>
-                                                                                <div class="owl-page active">
-                                                                                    <span class=""></span>
-                                                                                </div>
-                                                                                <div class="owl-page">
-                                                                                    <span class=""></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide text-center">
-                                                    <div class="row">
-                                                        <div class="col-xl-8 col-md-12 d-block mx-auto">
-                                                            <div class="testimonia">
-                                                                <p class="text-white-80"><i
-                                                                        class="fa fa-quote-left fs-20"></i> Duis
-                                                                    aute irure dolor
-                                                                    in reprehenderit in voluptate velit esse
-                                                                    cillum dolore eu fugiat nulla
-                                                                    pariatur. Excepteur sint occaecat cupidatat
-                                                                    non proident, sunt in culpa qui
-                                                                    officia deserunt mollit anim id est laborum.
-                                                                    Sed ut perspiciatis unde omnis
-                                                                    iste natus error sit voluptatem accusantium
-                                                                    doloremque laudantium.</p>
-                                                                <div class="testimonia-data">
-                                                                    <h3 class="title">Sophie Carr</h3>
-                                                                    <span class="post">Web Developer</span>
-                                                                    <div class="rating-stars">
-                                                                        <div class="rating-stars block my-rating-5 mb-5"
-                                                                            data-rating="5"></div>
-                                                                        <div class="owl-controls clickable">
-                                                                            <div class="owl-pagination">
-                                                                                <div class="owl-page ">
-                                                                                    <span class=""></span>
-                                                                                </div>
-                                                                                <div class="owl-page">
-                                                                                    <span class=""></span>
-                                                                                </div>
-                                                                                <div class="owl-page active">
-                                                                                    <span class=""></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ROW-9 CLOSED -->
 
                     <!-- ROW-10 OPEN -->
                     <div class="section pb-0" id="Contact">
@@ -3292,22 +2452,19 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                                 <div class="col-lg-6">
                                     <div class="feature-1 border-0"> <a href="#"></a>
                                         <div class="mb-3"> <i class="si si-earphones-alt fs-50"></i> </div>
-                                        <h4 class="fs-25">Get Support</h4>
-                                        <p class="mb-1 text-white">Need Help? Don't worry. Please visit our support
-                                            website. Our dedicated
-                                            team will help you.</p>
+                                        <h4 class="fs-25">Contact Management</h4>
+                                        <p class="mb-1 text-white">For system access or technical issues, please reach out to your building management office.</p>
                                         <h6 class="mb-0">Support : <a class="text-white pos-relative"
-                                                href="mailto:support@spruko.com">support@spruko.com</a></h6>
+                                                href="mailto:admin@unitcare.my">admin@unitcare.my</a></h6>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mt-5 mt-xl-0 mt-lg-0">
                                     <div class="feature-1 border-0"> <a href="#"></a>
                                         <div class="mb-3"> <i class="si si-bubbles fs-50"></i> </div>
-                                        <h4 class="fs-25">Pre-Sale Questions</h4>
-                                        <p class="mb-1 text-white">Please feel free to ask any questions before making
-                                            the purchase.</p>
-                                        <h6 class="mb-0">Ask : <a class="text-white pos-relative"
-                                                href="mailto:support@spruko.com">support@spruko.com</a>
+                                        <h4 class="fs-25">Resident Enquiries</h4>
+                                        <p class="mb-1 text-white">Questions about your unit, bookings, or maintenance? Your management team is ready to help.</p>
+                                        <h6 class="mb-0">Enquiry : <a class="text-white pos-relative"
+                                                href="mailto:admin@unitcare.my">admin@unitcare.my</a>
                                         </h6>
                                     </div>
                                 </div>
@@ -3334,44 +2491,38 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                             <div class="top-footer">
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-12 col-md-12 reveal revealleft">
-                                        <h6>About</h6>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                            veritatis et quasi architecto beatae vitae dicta sunt
-                                            explicabo.
+                                        <h6>About UnitCare</h6>
+                                        <p>UnitCare is a Maintenance Residence System designed to streamline operations for residential communities — connecting residents, security, technicians, and administrators in one unified platform.
                                         </p>
-                                        <p class="mb-5 mb-lg-2">Duis aute irure dolor in reprehenderit in voluptate
-                                            velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat .
+                                        <p class="mb-5 mb-lg-2">From maintenance requests to visitor management and facility bookings, UnitCare keeps your community running smoothly.
                                         </p>
                                     </div>
                                     <div class="col-lg-2 col-sm-6 col-md-4 reveal revealleft">
-                                        <h6>Pages</h6>
+                                        <h6>Quick Links</h6>
                                         <ul class="mb-5 mb-lg-0 ps-0">
-                                            <li><a href="index.html">Dashboard</a></li>
-                                            <li><a href="alerts.html">Elements</a></li>
-                                            <li><a href="form-elements.html">Forms</a></li>
-                                            <li><a href="charts.html">Charts</a></li>
-                                            <li><a href="datatable.html">Tables</a></li>
-                                            <li><a href="file-attachments.html">Other Pages</a></li>
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#Features">Features</a></li>
+                                            <li><a href="#About">About</a></li>
+                                            <li><a href="#Faqs">FAQ</a></li>
+                                            <li><a href="#Contact">Contact</a></li>
+                                            <li><a href="{{ route('login') }}">Login</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-2 col-sm-6 col-md-4 reveal revealleft">
-                                        <h6>Information</h6>
+                                        <h6>Modules</h6>
                                         <ul class="mb-5 mb-lg-0 ps-0">
-                                            <li><a href="about.html">Our Team</a></li>
-                                            <li><a href="about.html">Contact US</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="terms.html">Terms and Services</a></li>
+                                            <li><a href="#">Maintenance</a></li>
+                                            <li><a href="#">Visitors</a></li>
+                                            <li><a href="#">Bookings</a></li>
+                                            <li><a href="#">Announcements</a></li>
+                                            <li><a href="#">Reports</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-4 col-sm-12 col-md-4 reveal revealleft">
                                         <div class="">
                                             <a href="index.html"><img loading="lazy" alt="" class="logo mb-3"
                                                     src="../assets/img/brand/logo-light.png"></a>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                                dolore eu fugiat nulla pariatur Excepteur sint occaecat.</p>
+                                            <p>UnitCare — Smart, connected, and built for modern residential communities.</p>
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <input type="text" class="form-control"
@@ -3400,9 +2551,7 @@ C431.3,1830.2,378.4,1777.3,378.4,1712z" />
                             <footer class="main-footer px-0 text-center">
                                 <div class="row ">
                                     <div class="col-md-12 col-sm-12">
-                                        Copyright © <span id="year"></span> <a href="javascript:void(0)">Spruha</a>.
-                                        Designed with <span class="fa fa-heart text-danger"></span> by <a
-                                            href="javascript:void(0)"> Spruko </a> All rights reserved.
+                                        Copyright © <span id="year"></span> <a href="javascript:void(0)">UnitCare</a>. All rights reserved.
                                     </div>
                                 </div>
                             </footer>

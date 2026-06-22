@@ -1,4 +1,4 @@
-@inject('navbar', 'App\Http\Controllers\Utilities\NavbarController')
+@inject('navbar', 'App\Http\Controllers\utilities\NavbarController')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +6,7 @@
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Spruha -  Admin Panel HTML Dashboard Template">
     <meta name="author" content="Spruko Technologies Private Limited">
     <meta name="keywords" content="admin,dashboard,panel,bootstrap admin template,bootstrap dashboard,dashboard,themeforest admin dashboard,themeforest admin,themeforest dashboard,themeforest admin panel,themeforest admin template,themeforest admin dashboard,cool admin,it dashboard,admin design,dash templates,saas dashboard,dmin ui design">
@@ -29,6 +30,8 @@
 
     <!-- Select2 css -->
     <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+    @stack('styles')
 
 </head>
 
@@ -153,62 +156,7 @@
                                     </a>
                                 </div>
                                 <!-- Theme-Layout -->
-                                <!-- country -->
-                                <div class="dropdown main-header-notification flag-dropdown">
-                                    <a class="nav-link icon country-Flag">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <circle cx="256" cy="256" r="256" fill="#f0f0f0" />
-                                            <g fill="#0052b4">
-                                                <path
-                                                    d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z" />
-                                            </g>
-                                            <g fill="#d80027">
-                                                <path
-                                                    d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z" />
-                                                <path
-                                                    d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z" />
-                                            </g>
-                                        </svg>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a href="javascript:void(0)" class="dropdown-item d-flex ">
-                                            <span class="avatar  me-3 align-self-center bg-transparent"><img
-                                                    src="../assets/img/flags/french_flag.jpg" alt="img"></span>
-                                            <div class="d-flex">
-                                                <span class="mt-2">French</span>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="dropdown-item d-flex">
-                                            <span class="avatar  me-3 align-self-center bg-transparent"><img
-                                                    src="../assets/img/flags/germany_flag.jpg" alt="img"></span>
-                                            <div class="d-flex">
-                                                <span class="mt-2">Germany</span>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="dropdown-item d-flex">
-                                            <span class="avatar me-3 align-self-center bg-transparent"><img
-                                                    src="../assets/img/flags/italy_flag.jpg" alt="img"></span>
-                                            <div class="d-flex">
-                                                <span class="mt-2">Italy</span>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="dropdown-item d-flex">
-                                            <span class="avatar me-3 align-self-center bg-transparent"><img
-                                                    src="../assets/img/flags/russia_flag.jpg" alt="img"></span>
-                                            <div class="d-flex">
-                                                <span class="mt-2">Russia</span>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" class="dropdown-item d-flex">
-                                            <span class="avatar  me-3 align-self-center bg-transparent"><img
-                                                    src="../assets/img/flags/spain_flag.jpg" alt="img"></span>
-                                            <div class="d-flex">
-                                                <span class="mt-2">spain</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- country -->
+
                                 <!-- Full screen -->
                                 <div class="dropdown ">
                                     <a class="nav-link icon full-screen-link">
@@ -217,61 +165,25 @@
                                     </a>
                                 </div>
                                 <!-- Full screen -->
-                                <!-- Notification -->
+
+                                <!-- Notifications -->
                                 <div class="dropdown main-header-notification">
-                                    <a class="nav-link icon" href="">
+                                    <a class="nav-link icon" href="javascript:void(0)" id="notifBell">
                                         <i class="fe fe-bell header-icons"></i>
-                                        <span class="badge bg-danger nav-link-badge">4</span>
+                                        <span class="badge bg-danger rounded-pill position-absolute" id="notifBadge" style="top:8px;right:8px;font-size:10px;display:none;"></span>
                                     </a>
-                                    <div class="dropdown-menu">
-                                        <div class="header-navheading">
-                                            <p class="main-notification-text">You have 1 unread notification<span
-                                                    class="badge bg-pill bg-primary ms-3">View all</span></p>
+                                    <div class="dropdown-menu" style="min-width:320px;max-height:400px;overflow-y:auto;">
+                                        <div class="header-navheading d-flex justify-content-between align-items-center px-3 py-2">
+                                            <h6 class="mb-0">Notifications</h6>
+                                            <a href="javascript:void(0)" id="markAllRead" class="text-muted small">Mark all read</a>
                                         </div>
-                                        <div class="main-notification-list">
-                                            <div class="media new">
-                                                <div class="main-img-user online"><img alt="avatar"
-                                                        src="../assets/img/users/5.jpg"></div>
-                                                <div class="media-body">
-                                                    <p>Congratulate <strong>Olivia James</strong> for New template
-                                                        start</p>
-                                                    <span>Oct 15 12:32pm</span>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <div class="main-img-user"><img alt="avatar"
-                                                        src="../assets/img/users/2.jpg">
-                                                </div>
-                                                <div class="media-body">
-                                                    <p><strong>Joshua Gray</strong> New Message Received</p>
-                                                    <span>Oct 13
-                                                        02:56am</span>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <div class="main-img-user online"><img alt="avatar"
-                                                        src="../assets/img/users/3.jpg"></div>
-                                                <div class="media-body">
-                                                    <p><strong>Elizabeth Lewis</strong> added new schedule realease
-                                                    </p><span>Oct
-                                                        12 10:40pm</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown-footer">
-                                            <a href="javascript:void(0)">View All Notifications</a>
+                                        <div id="notifList" class="px-1">
+                                            <p class="text-center text-muted small py-3" id="notifEmpty">No notifications</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Notification -->
-                                <!-- Messages -->
-                                <div class="main-header-notification">
-                                    <a class="nav-link icon" href="chat.html">
-                                        <i class="fe fe-message-square header-icons"></i>
-                                        <span class="badge bg-success nav-link-badge">6</span>
-                                    </a>
-                                </div>
-                                <!-- Messages -->
+                                <!-- Notifications -->
+
                                 <!-- Profile -->
                                 <div class="dropdown main-profile-menu">
                                     <a class="d-flex" href="javascript:void(0)">
@@ -280,27 +192,24 @@
                                     </a>
                                     <div class="dropdown-menu">
                                         <div class="header-navheading">
-                                            <h6 class="main-notification-title">Sonia Taylor</h6>
-                                            <p class="main-notification-text">Web Designer</p>
+                                            <h6 class="main-notification-title">{{ auth()->user()->name }}</h6>
+                                            <p class="main-notification-text">{{ ucfirst(auth()->user()->role) }}</p>
                                         </div>
-                                        <a class="dropdown-item border-top" href="profile.html">
+                                        <a class="dropdown-item border-top" href="{{ route('profile.show') }}">
                                             <i class="fe fe-user"></i> My Profile
                                         </a>
-                                        <a class="dropdown-item" href="profile.html">
-                                            <i class="fe fe-edit"></i> Edit Profile
+                                        <a class="dropdown-item" href="{{ route('profile.edit') }}">
+                                            <i class="fe fe-edit-2"></i> Edit Profile
                                         </a>
-                                        <a class="dropdown-item" href="profile.html">
+                                        <a class="dropdown-item" href="{{ route('profile.settings') }}">
                                             <i class="fe fe-settings"></i> Account Settings
                                         </a>
-                                        <a class="dropdown-item" href="profile.html">
-                                            <i class="fe fe-settings"></i> Support
-                                        </a>
-                                        <a class="dropdown-item" href="profile.html">
-                                            <i class="fe fe-compass"></i> Activity
-                                        </a>
-                                        <a class="dropdown-item" href="{{ route('login') }}">
-                                            <i class="fe fe-power"></i> Sign Out
-                                        </a>
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button type="submit" class="dropdown-item">
+                                                <i class="fe fe-power"></i> Sign Out
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                                 <!-- Profile -->
@@ -335,8 +244,10 @@
                     <div class="main-sidebar-body main-body-1">
                         <div class="slide-left disabled" id="slide-left"><i class="fe fe-chevron-left"></i></div>
                         <ul class="menu-nav nav">
-                            <li class="nav-item {{ $navbar->dashboardIsActive('dashboard_utama') }}">
-                                <a class="nav-link {{ $navbar->dashboardIsActive('dashboard_utama') }}" href="{{ route('dashboard_utama') }}">
+
+                            {{-- ===== DASHBOARD — all roles ===== --}}
+                            <li class="nav-item {{ $navbar->dashboardIsActive() }}">
+                                <a class="nav-link {{ $navbar->dashboardIsActive() }}" href="{{ route('dashboard_utama') }}">
                                     <span class="shape1"></span>
                                     <span class="shape2"></span>
                                     <i class="ti-home sidemenu-icon menu-icon"></i>
@@ -344,28 +255,166 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item {{ $navbar->maintenanceIsActive('manageMaintenance') ? 'show' : '' }}">
-                                <a class="nav-link with-sub {{ $navbar->maintenanceIsActive('manageMaintenance') }}" href="javascript:void(0)">
-                                    <span class="shape1"></span>
-                                    <span class="shape2"></span>
-                                    <i class="ti-settings sidemenu-icon menu-icon"></i>
-                                    <span class="sidemenu-label">Maintenance</span>
-                                    <i class="angle fe fe-chevron-right"></i>
-                                </a>
-                                <ul class="nav-sub">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Maintenance</a></li>
-                                    <li class="nav-sub-item"><a class="nav-sub-link {{ $navbar->maintenanceIsActive('manageMaintenance') }}" href="{{ route('manageMaintenance') }}">Manage Maintenance</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
+                            {{-- ===== MANAGE — admin only ===== --}}
+                            @if(auth()->check() && auth()->user()->role === 'admin')
+                            <li class="nav-item {{ $navbar->manageIsExpanded() }}">
                                 <a class="nav-link with-sub" href="javascript:void(0)">
                                     <span class="shape1"></span>
                                     <span class="shape2"></span>
-                                    <i class="ti-shield sidemenu-icon menu-icon "></i>
-                                    <span class="sidemenu-label">Utilities</span>
-                                    <i class="angle fe fe-chevron-right"></i>
+                                    <i class="ti-shield sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Manage</span>
+                                    <i class="angle ti-angle-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Manage</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageUsers') }}"><a class="nav-sub-link {{ $navbar->isActive('manageUsers') }}" href="{{ route('manageUsers') }}">Users</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageResidents') }}"><a class="nav-sub-link {{ $navbar->isActive('manageResidents') }}" href="{{ route('manageResidents') }}">Residents</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageFacilities') }}"><a class="nav-sub-link {{ $navbar->isActive('manageFacilities') }}" href="{{ route('manageFacilities') }}">Facilities</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageStaff') }}"><a class="nav-sub-link {{ $navbar->isActive('manageStaff') }}" href="{{ route('manageStaff') }}">Staff</a></li>
+                                </ul>
+                            </li>
+                            @endif
+
+                            {{-- ===== VISITORS — admin: all 4 | resident: Register + My | security: Check-In + Today ===== --}}
+                            @if(auth()->check() && in_array(auth()->user()->role, ['resident', 'security', 'admin']))
+                            <li class="nav-item {{ $navbar->visitorsIsExpanded() }}">
+                                <a class="nav-link with-sub" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-id-badge sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Visitors</span>
+                                    <i class="angle ti-angle-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Visitors</a></li>
+                                    @if(auth()->user()->role === 'admin')
+                                    <li class="nav-sub-item {{ $navbar->isActive('registerVisitor') }}"><a class="nav-sub-link {{ $navbar->isActive('registerVisitor') }}" href="{{ route('registerVisitor') }}">Register Visitor</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('myVisitors') }}"><a class="nav-sub-link {{ $navbar->isActive('myVisitors') }}" href="{{ route('myVisitors') }}">My Visitors</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('checkIn') }}"><a class="nav-sub-link {{ $navbar->isActive('checkIn') }}" href="{{ route('checkIn') }}">Check-In / Out</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('todayVisitors') }}"><a class="nav-sub-link {{ $navbar->isActive('todayVisitors') }}" href="{{ route('todayVisitors') }}">Today's Visitors</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'resident')
+                                    <li class="nav-sub-item {{ $navbar->isActive('registerVisitor') }}"><a class="nav-sub-link {{ $navbar->isActive('registerVisitor') }}" href="{{ route('registerVisitor') }}">Register Visitor</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('myVisitors') }}"><a class="nav-sub-link {{ $navbar->isActive('myVisitors') }}" href="{{ route('myVisitors') }}">My Visitors</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'security')
+                                    <li class="nav-sub-item {{ $navbar->isActive('checkIn') }}"><a class="nav-sub-link {{ $navbar->isActive('checkIn') }}" href="{{ route('checkIn') }}">Check-In / Out</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('todayVisitors') }}"><a class="nav-sub-link {{ $navbar->isActive('todayVisitors') }}" href="{{ route('todayVisitors') }}">Today's Visitors</a></li>
+                                    @endif
+                                </ul>
+                            </li>
+                            @endif
+
+                            {{-- ===== MAINTENANCE — admin: All Requests | resident: My Requests | technician: My Tasks ===== --}}
+                            @if(auth()->check() && in_array(auth()->user()->role, ['admin', 'resident', 'technician']))
+                            <li class="nav-item {{ $navbar->maintenanceIsExpanded() }}">
+                                <a class="nav-link with-sub" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-clipboard sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Maintenance</span>
+                                    <i class="angle ti-angle-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Maintenance</a></li>
+                                    @if(auth()->user()->role === 'admin')
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageAllRequests') }}"><a class="nav-sub-link {{ $navbar->isActive('manageAllRequests') }}" href="{{ route('manageAllRequests') }}">All Requests</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'resident')
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageMyRequests') }}"><a class="nav-sub-link {{ $navbar->isActive('manageMyRequests') }}" href="{{ route('manageMyRequests') }}">My Requests</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'technician')
+                                    <li class="nav-sub-item {{ $navbar->isActive('myTasks') }}"><a class="nav-sub-link {{ $navbar->isActive('myTasks') }}" href="{{ route('myTasks') }}">My Tasks</a></li>
+                                    @endif
+                                </ul>
+                            </li>
+                            @endif
+
+                            {{-- ===== BOOKINGS — admin: Manage Bookings | resident: Book + My Bookings ===== --}}
+                            @if(auth()->check() && in_array(auth()->user()->role, ['admin', 'resident']))
+                            <li class="nav-item {{ $navbar->bookingsIsExpanded() }}">
+                                <a class="nav-link with-sub" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-calendar sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Bookings</span>
+                                    <i class="angle ti-angle-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Bookings</a></li>
+                                    @if(auth()->user()->role === 'admin')
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageAllBookings') }}"><a class="nav-sub-link {{ $navbar->isActive('manageAllBookings') }}" href="{{ route('manageAllBookings') }}">Manage Bookings</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'resident')
+                                    <li class="nav-sub-item {{ $navbar->isActive('bookFacility') }}"><a class="nav-sub-link {{ $navbar->isActive('bookFacility') }}" href="{{ route('bookFacility') }}">Book Facility</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('myBookings') }}"><a class="nav-sub-link {{ $navbar->isActive('myBookings') }}" href="{{ route('myBookings') }}">My Bookings</a></li>
+                                    @endif
+                                </ul>
+                            </li>
+                            @endif
+
+                            {{-- ===== ANNOUNCEMENTS — admin: Manage | resident + security: View ===== --}}
+                            @if(auth()->check())
+                            <li class="nav-item {{ $navbar->announcementsIsExpanded() }}">
+                                <a class="nav-link with-sub" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-announcement sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Announcements</span>
+                                    <i class="angle ti-angle-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Announcements</a></li>
+                                    @if(auth()->user()->role === 'admin')
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageAnnouncements') }}"><a class="nav-sub-link {{ $navbar->isActive('manageAnnouncements') }}" href="{{ route('manageAnnouncements') }}">Manage</a></li>
+                                    @else
+                                    <li class="nav-sub-item {{ $navbar->isActive('viewAnnouncements') }}"><a class="nav-sub-link {{ $navbar->isActive('viewAnnouncements') }}" href="{{ route('viewAnnouncements') }}">View Announcements</a></li>
+                                    @endif
+                                </ul>
+                            </li>
+                            @endif
+
+                            {{-- ===== PARCEL PICKUPS — admin: Manage | security+admin: Log + Pending | resident: My Parcels ===== --}}
+                            @if(auth()->check() && in_array(auth()->user()->role, ['admin', 'security', 'resident']))
+                            <li class="nav-item {{ $navbar->parcelsIsExpanded() }}">
+                                <a class="nav-link with-sub" href="javascript:void(0)">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-package sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Parcel Pickup</span>
+                                    <i class="angle ti-angle-right"></i>
+                                </a>
+                                <ul class="nav-sub">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Parcel Pickup</a></li>
+                                    @if(auth()->user()->role === 'admin')
+                                    <li class="nav-sub-item {{ $navbar->isActive('manageParcels') }}"><a class="nav-sub-link {{ $navbar->isActive('manageParcels') }}" href="{{ route('manageParcels') }}">Manage Parcels</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('parcels.log') }}"><a class="nav-sub-link {{ $navbar->isActive('parcels.log') }}" href="{{ route('parcels.log') }}">Log Parcel</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('parcels.pending') }}"><a class="nav-sub-link {{ $navbar->isActive('parcels.pending') }}" href="{{ route('parcels.pending') }}">Pending Pickups</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'security')
+                                    <li class="nav-sub-item {{ $navbar->isActive('parcels.log') }}"><a class="nav-sub-link {{ $navbar->isActive('parcels.log') }}" href="{{ route('parcels.log') }}">Log Parcel</a></li>
+                                    <li class="nav-sub-item {{ $navbar->isActive('parcels.pending') }}"><a class="nav-sub-link {{ $navbar->isActive('parcels.pending') }}" href="{{ route('parcels.pending') }}">Pending Pickups</a></li>
+                                    @endif
+                                    @if(auth()->user()->role === 'resident')
+                                    <li class="nav-sub-item {{ $navbar->isActive('myParcels') }}"><a class="nav-sub-link {{ $navbar->isActive('myParcels') }}" href="{{ route('myParcels') }}">My Parcels</a></li>
+                                    @endif
+                                </ul>
+                            </li>
+                            @endif
+
+                            {{-- ===== REPORTS — admin only ===== --}}
+                            @if(auth()->check() && auth()->user()->role === 'admin')
+                            <li class="nav-item {{ $navbar->isActive('manageReports') }}">
+                                <a class="nav-link {{ $navbar->isActive('manageReports') }}" href="{{ route('manageReports') }}">
+                                    <span class="shape1"></span>
+                                    <span class="shape2"></span>
+                                    <i class="ti-bar-chart sidemenu-icon menu-icon"></i>
+                                    <span class="sidemenu-label">Reports</span>
                                 </a>
                             </li>
+                            @endif
+
+
                         </ul>
                         <div class="slide-right" id="slide-right"><i class="fe fe-chevron-right"></i></div>
                     </div>
@@ -397,121 +446,16 @@
         </div>
         <!--End Footer-->
 
-        <!-- Sidebar -->
-        <div class="sidebar sidebar-right sidebar-animate">
-            <div class="sidebar-icon">
-                <a href="#" class="text-end float-end text-dark fs-20" data-bs-toggle="sidebar-right" data-bs-target=".sidebar-right"><i class="fe fe-x"></i></a>
-            </div>
-            <div class="sidebar-body">
-                <h5>Todo</h5>
-                <div class="d-flex p-3">
-                    <label class="ckbox"><input checked type="checkbox"><span>Hangout With friends</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top">
-                    <label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top">
-                    <label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top">
-                    <label class="ckbox"><input checked type="checkbox"><span>System Updated</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top">
-                    <label class="ckbox"><input type="checkbox"><span>Do something more</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top">
-                    <label class="ckbox"><input type="checkbox"><span>System Updated</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top">
-                    <label class="ckbox"><input type="checkbox"><span>Find an Idea</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <div class="d-flex p-3 border-top mb-0">
-                    <label class="ckbox"><input type="checkbox"><span>Project review</span></label>
-                    <span class="ms-auto">
-                        <i class="fe fe-edit-2 text-primary me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Edit"></i>
-                        <i class="fe fe-trash-2 text-danger me-2" data-bs-toggle="tooltip" title="" data-bs-placement="top" data-bs-original-title="Delete"></i>
-                    </span>
-                </div>
-                <h5>Overview</h5>
-                <div class="p-4">
-                    <div class="main-traffic-detail-item">
-                        <div>
-                            <span>Founder &amp; CEO</span> <span>24</span>
-                        </div>
-                        <div class="progress">
-                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-xs wd-20p" role="progressbar"></div>
-                        </div><!-- progress -->
-                    </div>
-                    <div class="main-traffic-detail-item">
-                        <div>
-                            <span>UX Designer</span> <span>1</span>
-                        </div>
-                        <div class="progress">
-                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" class="progress-bar progress-bar-xs bg-secondary wd-15p" role="progressbar"></div>
-                        </div><!-- progress -->
-                    </div>
-                    <div class="main-traffic-detail-item">
-                        <div>
-                            <span>Recruitment</span> <span>87</span>
-                        </div>
-                        <div class="progress">
-                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" class="progress-bar progress-bar-xs bg-success wd-45p" role="progressbar"></div>
-                        </div><!-- progress -->
-                    </div>
-                    <div class="main-traffic-detail-item">
-                        <div>
-                            <span>Software Engineer</span> <span>32</span>
-                        </div>
-                        <div class="progress">
-                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-xs bg-info wd-25p" role="progressbar"></div>
-                        </div><!-- progress -->
-                    </div>
-                    <div class="main-traffic-detail-item">
-                        <div>
-                            <span>Project Manager</span> <span>32</span>
-                        </div>
-                        <div class="progress">
-                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-xs bg-danger wd-25p" role="progressbar"></div>
-                        </div><!-- progress -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Sidebar -->
+        
 
     </div>
     <!-- End Page -->
 
     <!-- Back-to-top -->
     <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Jquery js-->
     <script src="../assets/plugins/jquery/jquery.min.js"></script>
@@ -541,6 +485,121 @@
 
     <!-- Custom js -->
     <script src="../assets/js/custom.js"></script>
+
+    @stack('scripts')
+
+    <script>
+    $.ajaxSetup({
+        headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }
+    });
+
+    $(function () {
+        // sidemenu.js uses indexOf(lastUrlSegment) which causes false matches when multiple
+        // routes share the same last segment (e.g. /bookings/my AND /visitors/my → both match "my").
+        // Fix: stop running slide animations, reset inline styles, and re-apply active/show
+        // using full-path exact matching.
+        var fullPath = window.location.pathname;
+
+        // Stop animations and clear inline display styles sidemenu.js may have set
+        $('.main-sidebar .nav-sub').stop(true, true).css('display', '');
+
+        // Clear all sidemenu.js active/show state
+        $('.main-sidebar .nav-item').removeClass('show active');
+        $('.main-sidebar .nav-sub-item').removeClass('active');
+        $('.main-sidebar .nav-sub-link').removeClass('active');
+
+        // Re-apply correct state using exact full-path match
+        $('.main-sidebar .nav-sub-link[href]').each(function () {
+            var linkPath;
+            try { linkPath = new URL(this.href).pathname; } catch (e) { linkPath = this.getAttribute('href'); }
+            if (linkPath === fullPath) {
+                $(this).addClass('active');
+                $(this).closest('.main-sidebar .nav-item').addClass('show active');
+                $(this).parent('.nav-sub-item').addClass('active');
+            }
+        });
+
+        // Re-apply active for direct nav links (no sub-menu) e.g. Dashboard, Reports
+        $('.main-sidebar .nav-link:not(.with-sub)[href]').each(function () {
+            var linkPath;
+            try { linkPath = new URL(this.href).pathname; } catch (e) { linkPath = this.getAttribute('href'); }
+            if (linkPath === fullPath) {
+                $(this).addClass('active');
+                $(this).closest('.main-sidebar .nav-item').addClass('active');
+            }
+        });
+    });
+    </script>
+
+    <script>
+    (function () {
+        var countUrl    = '{{ route("notifications.count") }}';
+        var listUrl     = '{{ route("notifications.list") }}';
+        var markReadUrl = '{{ route("notifications.readAll") }}';
+
+        function loadCount() {
+            $.get(countUrl, function (res) {
+                var n = res.count || 0;
+                if (n > 0) {
+                    $('#notifBadge').text(n > 99 ? '99+' : n).show();
+                } else {
+                    $('#notifBadge').hide();
+                }
+            });
+        }
+
+        function loadList() {
+            $.get(listUrl, function (res) {
+                var items = res.data || [];
+                $('#notifList').empty();
+                if (items.length === 0) {
+                    $('#notifList').append('<p class="text-center text-muted small py-3">No notifications</p>');
+                    return;
+                }
+                items.forEach(function (n) {
+                    var unreadClass = n.read_at ? '' : 'fw-bold';
+                    var html = '<div class="dropdown-item border-bottom py-2 px-3 ' + unreadClass + '" style="white-space:normal;cursor:default;">' +
+                        '<div class="small text-primary">' + $('<div>').text(n.title).html() + '</div>' +
+                        '<div class="small">' + $('<div>').text(n.message).html() + '</div>' +
+                        '<div class="text-muted" style="font-size:11px;">' + (n.created_at || '') + '</div>' +
+                        '</div>';
+                    $('#notifList').append(html);
+                });
+            });
+        }
+
+        // Open dropdown: load list & mark as read
+        $(document).on('click', '#notifBell', function (e) {
+            e.stopPropagation();
+            var $menu = $(this).closest('.main-header-notification').find('.dropdown-menu');
+            var isOpen = $menu.hasClass('show');
+            $('.dropdown-menu.show').removeClass('show');
+            if (!isOpen) {
+                loadList();
+                $menu.addClass('show');
+            }
+        });
+
+        // Mark all read
+        $(document).on('click', '#markAllRead', function () {
+            $.post(markReadUrl, {}, function () {
+                $('#notifBadge').hide();
+                loadList();
+            });
+        });
+
+        // Close on outside click
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.main-header-notification').length) {
+                $('.main-header-notification .dropdown-menu').removeClass('show');
+            }
+        });
+
+        // Poll count every 60 seconds
+        loadCount();
+        setInterval(loadCount, 60000);
+    })();
+    </script>
 
 </body>
 

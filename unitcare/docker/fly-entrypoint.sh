@@ -21,6 +21,7 @@ QUEUE_CONNECTION=${QUEUE_CONNECTION:-sync}
 LOG_CHANNEL=${LOG_CHANNEL:-stderr}
 EOF
 
+php /var/www/artisan view:clear
 php /var/www/artisan config:clear
 php /var/www/artisan config:cache
 

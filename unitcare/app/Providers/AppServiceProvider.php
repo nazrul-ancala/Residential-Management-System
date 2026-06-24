@@ -11,8 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        require_once app_path('Http/Controllers/utilities/NavbarController.php');
-        require_once app_path('Http/Controllers/utilities/NotificationController.php');
+        //
     }
 
     /**

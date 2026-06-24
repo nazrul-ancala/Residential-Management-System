@@ -47,9 +47,8 @@ services:
     dockerfilePath: ./unitcare/Dockerfile.fly
     dockerContext: ./unitcare
     plan: free
-    buildArgs:
-      - name: VITE_API_URL
-        value: https://unitcare-api.onrender.com
+    dockerBuildArgs:
+      VITE_API_URL: https://unitcare-api.onrender.com
     envVars:
       - key: APP_ENV
         value: production

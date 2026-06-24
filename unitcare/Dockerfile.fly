@@ -11,8 +11,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www
 COPY . .
 
-RUN composer install --no-dev \
-    && composer dump-autoload --optimize --classmap-authoritative \
+RUN composer install --no-dev --no-scripts \
+    && composer dump-autoload --classmap-authoritative --no-scripts \
+    && php artisan package:discover --ansi || true \
     && rm -f bootstrap/cache/services.php bootstrap/cache/packages.php
 
 ARG VITE_API_URL=https://unitcare-api.onrender.com

@@ -1,0 +1,31 @@
+FROM php:8.4-fpm
+
+RUN apt-get update && apt-get install -y \
+    nginx supervisor \
+    git curl zip unzip libpng-dev libonig-dev libxml2-dev libzip-dev \
+    && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd zip \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www
+COPY . .
+
+RUN composer install --optimize-autoloader --no-dev \
+    && php artisan package:discover --ansi || true \
+    && rm -f bootstrap/cache/services.php bootstrap/cache/packages.php
+
+RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache \
+    && chmod -R 775 /var/www/storage /var/www/bootstrap/cache
+
+COPY docker/php-fpm-pool.conf /usr/local/etc/php-fpm.d/www.conf
+
+RUN rm -f /etc/nginx/sites-enabled/default
+COPY docker/fly-nginx.conf /etc/nginx/sites-available/app
+RUN ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled/app
+COPY docker/fly-supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY docker/fly-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 8080
+ENTRYPOINT ["/entrypoint.sh"]

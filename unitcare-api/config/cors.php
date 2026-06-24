@@ -18,7 +18,7 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'http://localhost:8080',
+        env('FRONTEND_URL', 'http://localhost:8080'),
         'http://127.0.0.1:8080',
     ],
 

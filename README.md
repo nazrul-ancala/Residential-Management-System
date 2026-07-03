@@ -2,13 +2,6 @@
 
 A full-stack property management system built for residential communities. Handles the complete resident lifecycle from maintenance requests to facility bookings, visitor management, and parcel tracking.
 
-## Live Demo
-
-- **App:** https://unitcare-app.onrender.com
-- **API:** https://unitcare-api.onrender.com
-
-> Hosted on Render free tier — may take 30–60 seconds to wake up on first visit.
-
 ## Tech Stack
 
 | Layer | Technology |

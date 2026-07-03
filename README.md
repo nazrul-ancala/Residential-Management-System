@@ -97,7 +97,12 @@ Open http://localhost:8080
 
 ## Screenshots
 
-<!-- Add screenshots here -->
+<img width="1901" height="907" alt="image" src="https://github.com/user-attachments/assets/d212b8a1-2827-4aad-b20b-d7e9d8731d57" />
+<img width="1901" height="910" alt="image" src="https://github.com/user-attachments/assets/a30f531e-5602-4f6e-b824-c9b432fd9dda" />
+<img width="1902" height="910" alt="image" src="https://github.com/user-attachments/assets/9c77e0e2-33bf-4bfc-9a0f-66402f29774b" />
+<img width="1905" height="907" alt="image" src="https://github.com/user-attachments/assets/aff2787d-4a32-4f1a-944d-90c7c993fe93" />
+
+
 
 ## License
 
